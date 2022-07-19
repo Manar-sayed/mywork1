@@ -35,7 +35,7 @@ class _homeState extends State<home> {
               child: GlassmorphicContainer(
                   width: 300,
                   height: 360,
-                  borderRadius: 20,
+                  borderRadius: 10,
                   blur: 5,
                   alignment: Alignment.bottomCenter,
                   border: 2,

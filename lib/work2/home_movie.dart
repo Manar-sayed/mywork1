@@ -4,6 +4,7 @@ import 'package:glassmorphism/glassmorphism.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'dart:ui';
 import 'package:mywork1/constants.dart';
+import 'package:mywork1/work2/movie_details.dart';
 
 import '../widget.dart';
 
@@ -142,11 +143,19 @@ class _home2State extends State<home2> {
                     child: Row(
 
                       children: [
-                        movie_poster("https://m.media-amazon.com/images/I/715iomL0vLL._AC_SL1334_.jpg"),
-                        movie_poster("https://s3.crackedcdn.com/phpimages/quickfix/8/4/7/261847.jpg?v=1"),
-                        movie_poster("https://i.pinimg.com/736x/b3/b2/4b/b3b24b14133b71dcb0daa5d32234c287.jpg"),
-                        movie_poster("https://www.indiewire.com/wp-content/uploads/2019/12/us-1.jpg?w=758"),
-                        movie_poster("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbfKD7yh4oxO5C3Osq4Ik_Ghp3fxehM2A2g0N4tB8dLrSDGHlesGq0YFbp5ztGf9O6KD4&usqp=CAU"),
+                        InkWell(
+
+                            child: movie_poster("assets/m.jpg"),
+                        onTap: (){
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) => const movie_details()),
+                          );
+                        },),
+                        movie_poster("assets/2.jpg"),
+                        movie_poster("assets/3.jpg"),
+                        movie_poster("assets/44.jpg"),
+                        movie_poster("assets/1.jpg"),
                          ],
                     ),
                   ),
@@ -173,12 +182,13 @@ class _home2State extends State<home2> {
                     child: Row(
 
                       children: [
-                        movie_poster("https://graphicdesignjunction.com/wp-content/uploads/2016/01/001-movie-poster.jpg"),
-                        movie_poster("https://photos.hancinema.net/photos/fullsizephoto1343300.jpg"),
-                        movie_poster("https://photos.hancinema.net/photos/fullsizephoto1264294.jpg"),
-                        movie_poster("https://popcornusa.s3.amazonaws.com/movies/650/10044-38759-Jurassicjpg"),
-                        movie_poster("https://photos.hancinema.net/photos/largephoto1483671.jpg"),
-                         ],
+                        movie_poster("assets/5.jpg"),
+                        movie_poster("assets/6.jpg"),
+                        movie_poster("assets/8.jpg"),
+                        movie_poster("assets/7.jpg"),
+                        movie_poster("assets/9.jpg"),
+
+                      ],
                     ),
                   ),
                 ),

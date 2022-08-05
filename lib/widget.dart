@@ -57,7 +57,7 @@ Widget movie_poster(String img){
       transform: Matrix4.rotationZ(0.07),
       decoration: BoxDecoration(
           image: DecorationImage(
-              image: NetworkImage(img),
+              image: AssetImage(img),
               fit: BoxFit.fill
           ),
 
@@ -66,5 +66,13 @@ Widget movie_poster(String img){
           // ),
       ),
     ),
+  );
+}
+Widget actorPhoto(String img){
+  return CircleAvatar(
+    backgroundColor: constants.kwhiteColor,
+    maxRadius: 34,
+    minRadius:14 ,
+    backgroundImage: NetworkImage(img),
   );
 }
